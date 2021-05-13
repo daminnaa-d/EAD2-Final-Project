@@ -1,0 +1,104 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding:0;
+    border: 0;
+}
+.image{
+    text-align: center;
+    padding: 170px 100px;
+    background: url("../images/background.jpg") ;
+    background-size: 100%;
+}
+
+.text{
+    margin: 0 50px 0 750px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 500px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.block1{
+    display: inline-block;
+    width: 500px;
+    padding: 20px;
+}
+
+.block2{
+    display: inline-block;
+    width: 500px;
+    padding: 20px;
+}
+
+.img1{
+    width: 500px;
+
+}
+.img2{
+    width: 500px;
+}
+
+ol{
+    counter-reset: li;
+    list-style: none;
+    *list-style: decimal;
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.rounded-list p{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;
+}
+
+.rounded-list p:hover{
+    background: #eee;
+}
+
+.rounded-list p:hover:before{
+    transform: rotate(360deg);
+}
+
+.rounded-list p:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #ffff66;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+
+.list{
+    width: 500px;
+    display: inline-block;
+}
